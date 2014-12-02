@@ -322,7 +322,7 @@ input {
     font-size: 11px; 
     color: #E4E3E2;
 }
-.left-item:last-child {
+#left {
     font-style: italic;
     color: #E4E3E2;
     font-size: 11px;
@@ -501,14 +501,40 @@ input {
 }
 
 #profile-pic {
-    width: 242px; height: 250px;
+    width: 236px; height: 244px;
+    overflow: hidden;
+}
+
+#profile-picholder {
+    overflow: hidden;
+    padding: 8px 8px 8px 8px; 
+    width: 236px; height: 244px;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    border: 3px solid #594D49;
-    padding: 4px 4px;
+    border: 2px solid #7f7f7f;
     float: right;
 }
+
+#description {
+    display: inline-block;
+    position: relative;
+}
+
+/*#description-button {
+    color: black; font-weight: 600;
+    padding: 10px;
+    border: 3px solid black;
+    background-color: #b4d1b6;
+    width: 130px; height: 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    right: -200px;
+    top: -30px;
+}*/
+
 
 #profile-header {
     font-size: 36px; font-weight: 700;
@@ -553,10 +579,12 @@ input {
 
 .sidebar-item:last-child {
     margin-bottom: 30px;
+    padding-right: 20px;
 }
 
 .sidebar-item:first-child {
-    padding-left: 0px;
+    padding-left: 30px;
+    font-weight: 700;
 }
 
 /*------BUCKET LIST*-------------*/
@@ -566,6 +594,7 @@ input {
     position: relative;
     background-color: #f0f0f0;
     padding: 25px 0px 25px 25px;
+    margin-bottom: 30px;
     
 }
 
@@ -595,8 +624,18 @@ input {
     text-align: center;
 }
 
+#continue {
+    font-size: 16px; 
+    position: relative;
+    right: -885px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-
+#continue:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
 
 
 
